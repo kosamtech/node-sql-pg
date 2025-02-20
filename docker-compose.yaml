@@ -1,0 +1,13 @@
+services:
+  postgres:
+    image: postgres:17-bullseye
+    env_file:
+      - ./.env
+    ports:
+      - "5434:5432"
+    networks:
+      - pg-network
+
+networks:
+  pg-network:
+    driver: bridge

@@ -1,0 +1,55 @@
+{
+  "name": "sql-pg",
+  "version": "1.0.0",
+  "description": "Testing Framework For Node & PostgreSQL DB with Jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --no-cache",
+    "migrate": "node-pg-migrate",
+    "dev": "nodemon ./src/index.ts",
+    "build": "tsc",
+    "start": "node ./dist/index.js",
+    "format": "prettier --tab-width 4 --write ./src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kosamtech/node-sql-pg.git"
+  },
+  "keywords": [
+    "SQL",
+    "Pg",
+    "Jest",
+    "Node"
+  ],
+  "author": "Kosam Omollo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kosamtech/node-sql-pg/issues"
+  },
+  "homepage": "https://github.com/kosamtech/node-sql-pg#readme",
+  "devDependencies": {
+    "@babel/core": "^7.26.9",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-typescript": "^7.26.0",
+    "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.14",
+    "@types/pg": "^8.11.11",
+    "@types/pg-format": "^1.0.5",
+    "@types/supertest": "^6.0.2",
+    "babel-jest": "^29.7.0",
+    "prettier": "^3.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "dedent": "^1.5.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jest": "^29.7.0",
+    "node-pg-migrate": "^7.9.1",
+    "nodemon": "^3.1.9",
+    "pg": "^8.13.3",
+    "pg-format": "^1.0.4",
+    "supertest": "^7.0.0"
+  }
+}

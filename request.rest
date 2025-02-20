@@ -1,0 +1,22 @@
+GET http://localhost:3005/users
+
+###
+POST http://localhost:3005/users
+Content-Type: application/json
+
+{
+    "username": "johndoe",
+    "bio": "I am a software developer"
+}
+
+###
+GET http://localhost:3005/users/1
+
+###
+PUT http://localhost:3005/users/1
+Content-Type: application/json
+
+{
+    "username": "johndoe",
+    "bio": "I am a software engineer and a data scientist"
+}
